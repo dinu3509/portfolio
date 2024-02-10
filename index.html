@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="s.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Days+One&family=Protest+Guerrilla&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script src="jq.js"></script>
+
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -27,25 +29,25 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#s1">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#s2">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#s3">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#s4">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#s5">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <section class="home">
+      <section class="home" id="s1">
         <div class="container">
             <div class="wrapper">
                 <div class="row">
@@ -72,7 +74,7 @@
         </div>
       </section>
     </div>
-<section class="about">
+<section class="about" id="s2">
     <div class="container1">
     <div class="wrapper">
         <div class="row">
@@ -91,8 +93,9 @@
  
 </div>
 </section>
+<div class="ab1">
 <section class="skillsec" id="s3">
-  <h1 id="d">Technical Skills</h1>
+  <h2 id="d">Technical Skills</h2>
 <div class="skills">
   <div class="skill">
       <div class="skillname"><i style="color : #c95d2e" class='bx bxl-html5'></i>HTML
@@ -135,9 +138,10 @@
 </div>
 
 </section>
+</div>
 <div class="clear" ></div>
-<section id="projects" >
-    <div class="project">
+<section id="projects"  >
+    <div class="project" id="s4" >
         <h1>Projects</h1>
         <div class="projects">
 
@@ -151,99 +155,64 @@
                     <a class="button" href="home.html" target="_bank">View Project</a>
                 </div>
 
-            </div>
-
-            
-
-            
+            </div>      
 
         </div>
     </div>
+    <svg class="dinesh">
+        <filter id="fire">
+            <feTurbulence id="turbulence" baseFrequency="0.1 0.1" 
+            numOctaves="2" seed=""3>
+        <animate attributeName="baseFrequency" dur="10s" 
+        values="0.1 0.1;0.12 0.12" repeatCount="indefinite">
+    
+    </animate>
+        
+        </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="1.5">
+            </feDisplacementMap>
+        </filter>
+    </svg>
     </section>
 
     <div class="o">
-    <section id="c2">
-<div class="container">
-  <div class="wrapper">
-    <div class="row">
-      <div class="col-md-6" id="colc1">
-        <div class="contactme" id="contactme">Contact<span>Me</span> </div>
-      </div>
-      <div class="col-md-6" id="colc2">
-        <form action="https://fabform.io/f/{insert-form-id-here}" method="post">
-          <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="form-group">
-              <button type="submit">Submit</button>
-          </div>
-        </form>
+<section class="contact-form" id="s5">
 
-          <p class="my-4">If you prefer to contact us by email. <a class="text-blue-500 hover:underline" href="">dinu350930@gmail.com</a></p>
-  </div>
-      </div>
-    </div>
-  </div>
+   <div class="contact-container">
+<div class="ti">
+    Contact<span id="aa">Me</span>
+</div>
+    <div class="cform">
+    <form action="https://api.web3forms.com/submit" method="POST"class="contact-left">
+
+        <input type="hidden" name="access_key" value="82e061da-a933-46a8-b0db-05d4f4c309d1">
+<input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+<input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+<textarea name="message" placeholder="Your Message"class="contact-inputs" required ></textarea>  
+<button type="submit">Submit</button>
+</form></div>
+   </div>
 </section>
-
-
-
-
-
-   <!--  <div class="o">
-<section id="c2">
-    <div class="contactme">Contact<span>Me</span> </div>
-
-    <div class="c21">
-        
-      <form action="https://fabform.io/f/{insert-form-id-here}" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-          </form>
-
-            <p class="my-4">If you prefer to contact us by email. <a class="text-blue-500 hover:underline" href="">dinu350930@gmail.com</a></p>
-    </div>
-
-
-</section>-->
-<div class="h"><hr></div>
+<hr>
 <footer>
-  <div class="footer_container">
-    <div class="logo"> <p>DINESH REDDY </p></div>
-      <div class="social_media">
-        <a href="https://www.facebook.com/profile.php?id=100052511964116" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/DineshR26942248" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/dinesh03544/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@ovteam1050" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/in/dinesh-reddy-2729a2278/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <div class="footer_container">
+      <div class="logo"> <h1>DINESH REDDY</h1></div>
+        <div class="social_media">
+            <!-- <a id="insta" href="https://www.instagram.com/dinesh03544/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a id="face" href="https://www.facebook.com/profile.php?id=100052511964116" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
+            <a id="twit" href="https://twitter.com/DineshR26942248" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a id="linke" href="https://www.linkedin.com/in/d-dinesh-778429281/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+           -->
+          <a href="https://www.facebook.com/profile.php?id=100052511964116" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/DineshR26942248" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/dinesh03544/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/d-dinesh-778429281/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="p"><p>Dinesh Reddy © 2024 All Rights Reserved.</p></div>
       </div>
-      <p>Dinesh Reddy © 2024 All Rights Reserved.</p>
-    </div>
-</footer>
+  </footer>
 </div>
-</div>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="m.js">
         
     </script>
