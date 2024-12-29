@@ -1,5 +1,5 @@
 {
-  "name": "pp",
+  "name": "port",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",
+    "react-scroll-trigger": "^0.6.14",
+    "react-simple-typewriter": "^5.0.1",
     "tailwind-scrollbar": "^3.1.0"
   },
   "devDependencies": {
