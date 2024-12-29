@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  /* Ensures at least 200% viewport height */
-  background-color:#F8FAFC ; /* Correct image property */
+  background-image: url('bg.jpg');
   background-size: cover; /* Ensures it covers the entire area */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repetition */
-  background-attachment: fixed; /* Optional: Makes the background fixed during scrolling */
 }
 /* Style for the active <li> when the child NavLink is active */
 li:has(.active-link) .active-box {
@@ -28,3 +26,9 @@ background-color: #000000;
 @keyframes scw{
   to{scale:1 1;}
 }*/
+.card{
+  background-image: url('cardbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

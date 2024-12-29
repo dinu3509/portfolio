@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import ScrollWatcher from './components/ScrollWatcher'
 import About from './components/About'
+import Education from './components/Education'
 const App = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const App = () => {
       <Header></Header>
       <Hero></Hero>
       <About></About>
+      <Education></Education>
 </div>
   )
 }

@@ -11,8 +11,8 @@ const Hero = () => {
       });
   return (
 
-    <div className='m-1 '>
-        <div className="container mx-auto bg-[#000000] rounded-2xl overflow-hidden p-5 shadow-xl ">
+    <div className='mt-1 '>
+        <div className="container mx-auto bg-[#000000] rounded-t-2xl overflow-hidden p-5 shadow-xl ">
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 '>
             <div className="flex justify-center lg:justify-start lg:items-center p-7">
                 <div className="flex flex-col">

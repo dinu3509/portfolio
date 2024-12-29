@@ -7,8 +7,8 @@ const About = () => {
     const [counterOn,setCounterOn]=useState(false)
 
   return (
-    <div className='m-1 mt-10'>
-        <div className="container rounded-2xl mx-auto bg-[#000000] p-12">
+    <div className=''>
+        <div className="container rounded-b-2xl mx-auto bg-[#000000] p-12">
             
             <div className="md:grid md:grid-cols-2 ">
 
