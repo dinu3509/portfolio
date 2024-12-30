@@ -28,7 +28,7 @@ const Navbar = () => {
 </div>
             <div className={`navbar absolute right-0 top-20 text-center mr-5 ${state ? '' : 'hidden'} md:flex md:static `}>
                 <ul className='md:flex gap-5 bg-gradient-to-b from-sky-800/10 to-sky-400/10 md:bg-none backdrop-blur-lg shadow-2xl z-0 rounded-xl p-2'>
-            {['About','Education','Skills'].map((item)=>(
+            {['About','Profile','Skills'].map((item)=>(
                 <li
                 key={item}
                 className="relative px-4 rounded-lg transition duration-300 md:text-black md:py-1 py-2 my-1"
