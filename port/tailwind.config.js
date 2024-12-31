@@ -8,5 +8,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [tailwindScrollbar],
+  plugins: [tailwindScrollbar
+  ],
 }

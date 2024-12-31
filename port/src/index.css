@@ -32,3 +32,11 @@ background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.inner{
+  box-shadow: inset 4px 4px 6px -0.1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(0,0,0,0.2),
+              0px 12px 10px -10px rgba(0,0,0,0.2);
+
+  
+}
