@@ -2,4 +2,14 @@ import logo from './dr.png'
 import hero from './wbg.jpg'
 import code from './code.jpg'
 import card from './cardbg.jpg'
-export {logo,hero,code,card}
+import ejs from  './icons8-express-js-96.png'
+import html from  './icons8-html-96.png'
+import js from  './icons8-javascript-96.png'
+import mongo from  './icons8-mongodb-96.png'
+import ocv from  './icons8-opencv-96.png'
+import panda from  './icons8-pandas-96.png'
+import tail from  './icons8-tailwindcss-96.png'
+import react from  './icons8-react-native-96.png'
+import tf from  './icons8-tensorflow-96.png'
+
+export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf}

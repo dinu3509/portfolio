@@ -1,5 +1,33 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { ejs } from '../assets'
+const Marq = (
+    {label,
+        img,
+        link
+
+    }
+) =>{
+    return (
+        <div className="flex flex-col justify-center items-center py-2px ">
+            <a href={link} target='blank'>
+            <img src={img} alt="" className='w-15'/>
+            </a>
+            
+            <div className="">
+            <h2 className='text-xl text-white flex '>{label}
+                
+            </h2>
+        </div>
+        </div>
+    )
+}
+Marq.PropTypes = {
+    label:PropTypes.string,
+    img:PropTypes.object,
+    link:PropTypes.string
+}
+
 const Card = (
     {clgName,
         year,
@@ -9,7 +37,7 @@ const Card = (
     }
 ) => {
   return (
-    <div className='card group relative  rounded-t-3xl w-full bg- gap-1 m-1 flex flex-col items-center my-3 h-56 justify-center md:min-w-[544px] md:max-w-[544px] overflow-hidden'>
+    <div className='card group relative  rounded-t-3xl w-full bg- gap-1 m-1 flex flex-col items-center my-3 h-56 justify-center md:min-w-[544px] md:max-w-[544px] overflow-hidden min-w-[300px]'>
                     <h1 className='text-xl font-serif font-bold'>{clgName}</h1>
                     <h1 className='text-lg font-bold text-yellow-600'>{year}</h1>
                     <h1 className='text-xl  font-bold'>{course}</h1>
@@ -36,4 +64,4 @@ Card.PropTypes ={
     measure:PropTypes.string
 }
 
-export default Card
+export  {Card,Marq}
