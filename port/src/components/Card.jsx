@@ -9,7 +9,7 @@ const Marq = (
     }
 ) =>{
     return (
-        <div className="flex flex-col justify-center items-center py-2px ">
+        <div className="flex flex-col justify-between items-center py-2">
             <a href={link} target='blank'>
             <img src={img} alt="" className='w-15'/>
             </a>

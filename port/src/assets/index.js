@@ -11,5 +11,6 @@ import panda from  './icons8-pandas-96.png'
 import tail from  './icons8-tailwindcss-96.png'
 import react from  './icons8-react-native-96.png'
 import tf from  './icons8-tensorflow-96.png'
+import git from './icons8-git-96.png'
 
-export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf}
+export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git}
