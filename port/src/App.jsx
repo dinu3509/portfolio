@@ -1,21 +1,29 @@
-import React from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import ScrollWatcher from './components/ScrollWatcher'
-import About from './components/About'
-import Education from './components/Education'
-import Skill from './components/Skill'
+import React, { useContext } from 'react';
+import { ThemeProvider, ThemeContext } from './components/ThemeContext';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Education from './components/Education';
+import Skill from './components/Skill';
+
+const AppContent = () => {
+  const { dm } = useContext(ThemeContext);
+
+  return (
+    <div className={dm ? 'bg-dmbg pt-1 transition-all duration-200' : 'bg-bg pt-1 transition-all duration-200'}>
+      <Header />
+      <Hero />
+      <Education />
+      <Skill />
+    </div>
+  );
+};
+
 const App = () => {
   return (
-    <div>
-      <ScrollWatcher></ScrollWatcher>
-      <Header></Header>
-      <Hero></Hero>
-      <About></About>
-      <Education></Education>
-      <Skill></Skill>
-</div>
-  )
-}
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;

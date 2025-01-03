@@ -12,5 +12,15 @@ import tail from  './icons8-tailwindcss-96.png'
 import react from  './icons8-react-native-96.png'
 import tf from  './icons8-tensorflow-96.png'
 import git from './icons8-git-96.png'
+import c from './icons8-c-programming-96.png'
+import py from './icons8-python-96.png'
+import java from './icons8-java-96.png'
+import cpp from './c-.png'
+import day from './day.png'
+import night from './night.png'
+import p1 from './p1.png'
+import p2 from './p2.jpg'
+import p3 from './p3.jpg'
+import p4 from './p4.jpg'
 
-export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git}
+export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git,c,py,java,cpp,day,night,p1,p2,p3,p4}

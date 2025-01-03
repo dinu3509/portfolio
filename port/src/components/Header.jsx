@@ -1,12 +1,13 @@
-import React from 'react'
+import {React,useContext} from 'react'
 import Navbar from './Navbar'
 import { logo } from '../assets'
 import { NavLink } from 'react-router-dom'
+import { ThemeContext } from './ThemeContext'
 const Header = () => {
-
+  const {dm} = useContext(ThemeContext)
   return (
     <>
-    <header className=" flex w-full justify-between  h-20 items-center  px-8 my-5">
+    <header className={` flex w-full justify-between z-20 h-20 items-center  px-8 my-5 ${dm?"dark" : ""}`}>
         <div className="flex justify-between w-full max-w-screen-2xl mx-auto items-center">
 
             {/*Logo*/}
@@ -24,7 +25,7 @@ const Header = () => {
 
             {/*Contact-Button*/}
         <div className="contact hidden md:flex items-center">
-            <button className='p-3 rounded-xl shadow-lg flex items-center active:scale-105 duration-150'>
+            <button className={`p-3 rounded-xl shadow-lg flex items-center active:scale-105 duration-150 bg-white`}>
                 Contact Me
             </button>
         </div>

@@ -1,32 +1,71 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { ejs } from '../assets'
-const Marq = (
-    {label,
+import { ThemeContext } from './ThemeContext'
+  
+const ProCard = (
+    {
         img,
-        link
+        title,
+        link,
+        content
 
     }
 ) =>{
-    return (
-        <div className="flex flex-col justify-between items-center py-2">
-            <a href={link} target='blank'>
-            <img src={img} alt="" className='w-15'/>
-            </a>
-            
-            <div className="">
-            <h2 className='text-xl text-white flex '>{label}
-                
-            </h2>
-        </div>
+    return(
+        <div className="w-80  mx-5 shrink-0">
+            <div className="flex flex-col border  min-h-[464px] max-h-[464px] rounded-2xl p-3 shadow-xl justify-between">
+                <div className="flex justify-center items-center">
+                    <img src={img} alt="" className='h-[200px] w-full'/>
+                </div>
+
+                <div className="flex flex-col justify-center items-center bg-gray-400 rounded-2xl p-2">
+                    <h1 className='text-center font-semibold'>{title}</h1>
+                    <h2>
+                    {content}
+                    </h2>
+
+                    <a href={link} target='_blank' className='border p-1 rounded-2xl my-2 cursor-pointer shadow-lg text-lg font-semibold'>
+                        View
+                    </a>
+                    
+                </div>
+            </div>
         </div>
     )
 }
-Marq.PropTypes = {
-    label:PropTypes.string,
+ProCard.PropTypes = {
     img:PropTypes.object,
-    link:PropTypes.string
+    title:PropTypes.string,
+    link:PropTypes.string,
+    content:PropTypes.string
+
 }
+
+const ScrollItem = (
+    {img,
+      cl,
+      label
+        
+    }
+) =>{
+    const {dm} = useContext(ThemeContext)
+
+    return(
+        <div className={`flex flex-col dark:text-white w-fit items-center m-2 shrink-0 justify-center ${dm?"dark ":" "}`+cl}>
+            <img src={img}  className='xl:h-32 xl:w-32 md:h-24 md:w-24 h-20 '/>
+            <h2 className=' md:text-lg'>{label}</h2>
+        </div>
+    )
+
+}
+ScrollItem.PropTypes = {
+    img:PropTypes.object,
+    cl:PropTypes.string,
+    label:PropTypes.string
+}
+
+
 
 const Card = (
     {clgName,
@@ -64,4 +103,4 @@ Card.PropTypes ={
     measure:PropTypes.string
 }
 
-export  {Card,Marq}
+export  {Card,ScrollItem,ProCard}

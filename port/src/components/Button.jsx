@@ -1,7 +1,26 @@
-import {React,useState} from 'react'
+import {React,useState,useContext} from 'react'
 import PropTypes from 'prop-types'
 import {NavLink} from "react-router-dom"
 import { Typewriter } from 'react-simple-typewriter'
+import { day,night } from '../assets'
+import { ThemeContext } from './ThemeContext'
+
+const DarkMode =() => {
+  const { dm, toggleMode } = useContext(ThemeContext);
+      const changeMode =() =>{
+        toggleMode(!dm)
+      }
+
+  return (
+    <button onClick={changeMode} className=' rounded-full  backdrop-blur-lg shadow-2xl right-3 fixed bottom-5 md:bottom-20 md:right-20 z-50'>
+      <img  src= {`${dm? day : night}`} className='md:w-10 w-8' />
+    </button>
+    
+  )
+}
+
+
+
 const ButtonPrimary = (
     {to,
     label,
@@ -117,5 +136,6 @@ ReadButton.PropTypes = {
 export {
     ButtonOutline,
     ButtonPrimary,
-    ReadButton
+    ReadButton,
+    DarkMode
 }
