@@ -5,13 +5,13 @@ const Education = () => {
   const {dm} = useContext(ThemeContext)
   return (
     <div className={`${dm? "dark" : ""}  `}>
-        <div className="container mt-10 mx-auto p-12 shadow-2xl rounded-2xl  mb-20 backdrop-blur-sm dark:bg-[#000000] ">
+        <div className="container  mx-auto p-12 shadow-2xl rounded-2xl  mb-10 backdrop-blur-sm dark:bg-[#000000] ">
             
             
             <div className=" flex flex-col xl:flex-row justify-center xl:gap-40 items-center">
                 
             <div className="flex flex-col text-white items-center">
-            <h2 className='md:text-6xl text-center font-bold text-black dark:text-white'>EDUC<span className='text-red-800'>AT</span>ION</h2>
+            <h2 className='text-3xl md:text-6xl text-center font-bold text-black dark:text-white'>EDUC<span className='text-red-800'>AT</span>ION</h2>
                 <Card clgName={`GITAM University`} year={`2022 - 2026`} course={`B.Tech in CSE`} grade={`9.52`} measure={`CGPA`}></Card>
                 <Card clgName={`Ascent Jr. College`} year={`2020 - 2022`} course={`Intermediate MPC (BIEAP)`} grade={`96.1 %`} measure={`Grade`}></Card>
                 <Card clgName={`DR. KKR Gowtham School`} year={`2019 - 2020`} course={<span>10<sup>th</sup> CBSE</span>} grade={`93.6 %`} measure={`Grade`}>
@@ -21,7 +21,7 @@ const Education = () => {
                 
             </div>
             <div className="flex flex-col mt-5 text-white items-center">
-            <h2 className='md:text-6xl text-center font-bold text-black dark:text-white'>EXPER<span className='text-red-800'>I</span>E<span className='text-red-800'>N</span>CE</h2>
+            <h2 className='text-3xl md:text-6xl text-center font-bold text-black dark:text-white'>EXPER<span className='text-red-800'>I</span>E<span className='text-red-800'>N</span>CE</h2>
                 <Card clgName={`ExceedIQ`} year={`Aug 2024 - Present`} course={`MERN Stack Trainee`} grade={`Not Yet Given`} measure={`Project:`}></Card>
                 <Card clgName={`Rinex AI`} year={`Sept 2024 - Dec 2024`} course={`ML and DL Trainee`} grade={`House Price Prediction`} measure={`Project:`}></Card>
                 <Card clgName={`Vibrance AI`} year={`June 2024 - Aug 2024`} course={<span>10<sup>th</sup> CBSE</span>} grade={`Plant Leaf Disease Detection`} measure={`Project:`}>

@@ -14,7 +14,7 @@ const ProCard = (
 ) =>{
     return(
         <div className="w-80  mx-5 shrink-0">
-            <div className="flex flex-col border  min-h-[464px] max-h-[464px] rounded-2xl p-3 shadow-xl justify-between">
+            <div className="flex flex-col border   rounded-2xl p-3 shadow-xl justify-between">
                 <div className="flex justify-center items-center">
                     <img src={img} alt="" className='h-[200px] w-full'/>
                 </div>
@@ -34,7 +34,7 @@ const ProCard = (
         </div>
     )
 }
-ProCard.PropTypes = {
+ProCard.propTypes = {
     img:PropTypes.object,
     title:PropTypes.string,
     link:PropTypes.string,
@@ -52,8 +52,8 @@ const ScrollItem = (
     const {dm} = useContext(ThemeContext)
 
     return(
-        <div className={`flex flex-col dark:text-white w-fit items-center m-2 shrink-0 justify-center ${dm?"dark ":" "}`+cl}>
-            <img src={img}  className='xl:h-32 xl:w-32 md:h-24 md:w-24 h-20 '/>
+        <div className={`flex flex-col dark:text-white  items-center m-2 shrink-0  ${dm?"dark ":" "}`+cl}>
+            <img src={img}  className='xl:h-32 xl:w-32 md:h-24 md:w-24 h-10 sm:h-20 '/>
             <h2 className=' md:text-lg'>{label}</h2>
         </div>
     )

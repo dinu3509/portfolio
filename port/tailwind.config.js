@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       backgroundImage :{
-        'dmbg' : "url(./dmbg.jpg)",
-        'bg' : "url(./bg.jpg)"
+        'dmbg' : "url(/dmbg.webp)",
+        'bg' : "url(/bg.webp)"
       }
     },
   },

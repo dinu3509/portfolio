@@ -7,14 +7,14 @@ const Skill = () => {
   const {dm} =useContext(ThemeContext);
   return (
 <div className={`${dm ? "dark": ""}`}>
-    <div className='dark:bg-black container p-12 mx-auto h-auto  backdrop-blur-sm rounded-2xl shadow-2xl'>
+    <div className='dark:bg-black container p-12 mx-auto h-auto  backdrop-blur-sm rounded-2xl shadow-2xl xl:min-h-screen mb-10'>
      
-        <h2 className="text-black dark:text-white text-center text-6xl font-bold mb-10">
+        <h2 className="text-black dark:text-white text-center text-3xl md:text-6xl  font-bold mb-10">
           SK<span className='text-red-900'>I</span>LL< span className='text-red-900'>S</span>
         </h2>
       
    
-       <h1 className='text-black dark:text-white text-center text-4xl font-bold mb-4 '>TOOLS AND LIBRARIES</h1>
+       <h1 className='text-black dark:text-white  text-3xl md:text-3xl text-center font-bold mb-4 '>TOOLS AND LIBRARIES</h1>
       <div className="scrollContainer relative overflow-hidden border-y xl:h-48 lg:h-36 flex justify-center items-center h-32">
         <div className="carouselPrimary flex ">
         <ScrollItem img={html} cl={`item item1`} label={`HTML`}></ScrollItem>
@@ -24,7 +24,7 @@ const Skill = () => {
 <ScrollItem img={ejs} cl={`item item5`} label={`ExpressJS`}></ScrollItem>
 
         </div>
-        <div className="carouselPrimary carouselSecondary">
+        <div className="carouselPrimary carouselSecondary w-full">
       
         <ScrollItem img={mongo} cl={`item item6`} label={`MongoDB`}></ScrollItem>
 <ScrollItem img={panda} cl={`item item7`} label={`Pandas`}></ScrollItem>
@@ -35,7 +35,7 @@ const Skill = () => {
         </div>
 
       </div>
-      <h1 className=' text-black dark:text-white text-center text-4xl font-bold mb-4  mt-10'><span className='hidden lg:block'>PROGRAMMING</span> LANGUAGES</h1>
+      <h1 className=' text-black dark:text-white text-center text-3xl font-bold mb-4  mt-10'><span className='hidden lg:inline'>PROGRAMMING</span> LANGUAGES</h1>
       <div className="overflow-hidden xl:h-48 lg:h-36 border-y flex justify-center items-center h-32 md:gap-24 scrollContainer">
       <ScrollItem img={c} cl={`item item1`} label={`C`}></ScrollItem>
 <ScrollItem img={py} cl={`item item2`} label={`Python`}></ScrollItem>

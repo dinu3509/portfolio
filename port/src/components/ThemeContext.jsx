@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const [dm, setDm] = useState(true);
+    const [dm, setDm] = useState(false);
 
     const toggleMode = () => setDm(!dm);
 

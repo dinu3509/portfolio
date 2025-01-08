@@ -20,6 +20,15 @@ const DarkMode =() => {
 }
 
 
+const SubmitButton = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+
 
 const ButtonPrimary = (
     {to,
@@ -137,5 +146,6 @@ export {
     ButtonOutline,
     ButtonPrimary,
     ReadButton,
-    DarkMode
+    DarkMode,
+    SubmitButton
 }

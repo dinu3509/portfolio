@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Education from './components/Education';
 import Skill from './components/Skill';
+import Contact from './components/Contact';
 
 const AppContent = () => {
   const { dm } = useContext(ThemeContext);
@@ -14,6 +15,7 @@ const AppContent = () => {
       <Hero />
       <Education />
       <Skill />
+      <Contact/>
     </div>
   );
 };
