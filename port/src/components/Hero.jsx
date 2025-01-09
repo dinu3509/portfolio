@@ -67,7 +67,7 @@ const Hero = () => {
                     <div className="flex pt-4 gap-8">
                     <ButtonPrimary label="Download CV" icon="download" className={'border  p-2 flex items-center rounded-xl bg-red-900 hover:bg-red-500'}></ButtonPrimary>  
 
-                    <ButtonOutline label={'Scroll Down'} icon={'arrow_downward'} to={'/about'} className={'border p-2 flex items-center rounded-xl bg-gray-700 hover:bg-gray-600'}></ButtonOutline>
+                    <ButtonOutline label={'Scroll Down'} icon={'arrow_downward'} to={'#about'} className={'border p-2 flex items-center rounded-xl bg-gray-700 hover:bg-gray-600'}></ButtonOutline>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@ const Hero = () => {
 
             <div className=" rounded-xl lg:flex justify-center hidden ">
                 <figure className='max-w-[480px] relative'>
-                    <img src={hero} alt="" width={676} height={800} className='rounded-full' />
+                    <img src={hero} alt="" width={480} height={800} className='rounded-full w-[480px] h-[480px]' />
                     <div className='absolute w-full h-4/6 top-1/3 -z-10 rounded-3xl'></div>
 
                 </figure>

@@ -6,7 +6,8 @@ import Projects from './Projects'
 const Skill = () => {
   const {dm} =useContext(ThemeContext);
   return (
-<div className={`${dm ? "dark": ""}`}>
+    <section id='skills'>
+      <div className={`${dm ? "dark": ""}`}>
     <div className='dark:bg-black container p-12 mx-auto h-auto  backdrop-blur-sm rounded-2xl shadow-2xl xl:min-h-screen mb-10'>
      
         <h2 className="text-black dark:text-white text-center text-3xl md:text-6xl  font-bold mb-10">
@@ -42,13 +43,12 @@ const Skill = () => {
 <ScrollItem img={java} cl={`item item3`} label={`Java`}></ScrollItem>
 
       </div>
-
-
-
           
     </div>
     <Projects></Projects>
     </div>
+    </section>
+
 
   )
 }

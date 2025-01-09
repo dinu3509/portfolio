@@ -1,5 +1,5 @@
 import logo from './dr.png'
-import hero from './wbg.jpg'
+import hero from './wbg.webp'
 import code from './code.jpg'
 import card from './cardbg.jpg'
 import ejs from  './icons8-express-js-96.png'
@@ -22,5 +22,6 @@ import p1 from './p1.webp'
 import p2 from './p2.jpg'
 import p3 from './p3.jpg'
 import p4 from './p4.jpg'
+import cc from './cc.jpg'
 
-export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git,c,py,java,cpp,day,night,p1,p2,p3,p4}
+export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git,c,py,java,cpp,day,night,p1,p2,p3,p4,cc}

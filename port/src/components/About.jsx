@@ -10,7 +10,8 @@ const About = () => {
     const {dm} =useContext(ThemeContext);
 
   return (
-    <div className={`${dm ? "dark" : ""}`}>
+    <section id='about'>
+         <div className={`${dm ? "dark" : ""}`}>
         <div className="container rounded-b-2xl mx-auto dark:bg-[#000000] p-12">
             
             <div className="md:grid md:grid-cols-2 ">
@@ -78,6 +79,8 @@ const About = () => {
         
       
     </div>
+    </section>
+   
   )
 }
 

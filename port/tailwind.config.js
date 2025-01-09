@@ -10,8 +10,9 @@ export default {
     extend: {
       backgroundImage :{
         'dmbg' : "url(/dmbg.webp)",
+        'cc' : "url(/cc.jpg)",
         'bg' : "url(/bg.webp)"
-      }
+      },
     },
   },
   plugins: [tailwindScrollbar

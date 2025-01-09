@@ -10,13 +10,13 @@ body {
   @apply transition-colors duration-200
 }
 /* Style for the active <li> when the child NavLink is active */
-li:has(.active-link) .active-box {
+/*li:has(.active-link) .active-box {
 background-color: #000000;
 @apply rounded-lg transition-all ease-in-out duration-300
-}
-.active-link{
+}*/
+/*.active-link{
   @apply text-white transition-all ease-in-out duration-300
-}
+}*/
 
 /*.scw{
   scale: 0 1;
@@ -71,8 +71,7 @@ background-color: #000000;
 }
 .inputbox{
   position: relative;
-  max-width: 425px;
-  
+  max-width: 425px;  
 }
 .inputbox input{
   padding: 8px;
@@ -83,8 +82,7 @@ background-color: #000000;
   background-color: transparent;
   outline: none;
   border: none;
-  color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid;
 }
 .inputbox:focus-within .dd{
   top: -12px;
@@ -107,36 +105,34 @@ textarea{
 }
 .di{
   top: 25%;
+  transition: all 0.2s ease-in-out;
 }
 .inputbox:focus-within .di{
   top: -16px;
-  color: white;
-  transition: all 0.2s ease-in-out;
+ 
   display: flex;
 }
 
-
-@media screen and (min-width:768px ){
-  .carouselPrimary{
-    display: flex;
-   
-    justify-content: space-around;
-    animation: scroll 22s linear infinite;
-  }
-  .carouselSecondary{
-    animation: scroll 22s linear infinite;
-    animation-delay: 11s;
-  }
-}
 textarea{
+  transition: all 0.2s ease-in-out;
   background: transparent;
-  color: white;
 }
 textarea:focus{
   outline: none;
+  
+}
+.bb::before{
+  content: '';
+  background-image: url("/cc.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  opacity: .1;
+  border-radius: 16px;
 }
 .ddd:focus::placeholder {
-  color: transparent; /* Hides the placeholder text */
+  color: white; /* Hides the placeholder text */
 }
 @media screen and (max-width:49 ){
   .carouselPrimary{
@@ -173,7 +169,18 @@ textarea:focus{
   -o-animation-play-state: paused;
   animation-play-state: paused;
 }
-
+@media screen and (min-width:768px ){
+  .carouselPrimary{
+    display: flex;
+   
+    justify-content: space-around;
+    animation: scroll 22s linear infinite;
+  }
+  .carouselSecondary{
+    animation: scroll 22s linear infinite;
+    animation-delay: 11s;
+  }
+}
 /* Pause animations for carouselPrimary when scrollContainer is hovered but carouselPrimary is not */
 .scrollContainer:hover .carouselPrimary:not(:hover) {
   -webkit-animation-play-state: paused;

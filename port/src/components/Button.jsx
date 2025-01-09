@@ -21,9 +21,14 @@ const DarkMode =() => {
 
 
 const SubmitButton = () => {
+  
+  const { dm } = useContext(ThemeContext);
+
   return (
-    <div>
-      
+    <div type="submit" className={`w-full ${dm? "dark" : undefined}`}>
+      <button className='border rounded-full w-full py-1 max-w-[425px] dark:border-white border-black'>
+        <h3 className='text-xl'>SUBMIT</h3>
+      </button>
     </div>
   )
 }
@@ -78,23 +83,56 @@ const ButtonOutline = ({
     icon,
     className
 }) => {
-    if(to){
-        return(
-            <NavLink to={to}
-            className={"btn btn-outline "+className}
-            >{label}
-            {icon ? <span className='material-symbols-rounded animate-bounce' aria-hidden="true">{icon}</span> :undefined}</NavLink>
-        )
-    }else{
-  return (
-    <div>
-      <button className={'btn btn-outline '+className}>
-      {label}
-      {icon ? <span className='material-symbols-rounded ' aria-hidden="true">{icon}</span> :undefined}
-      </button>
-    </div>
-  )
-}}
+  const handleScroll = (e) => {
+    if (to.startsWith('#')) {
+      e.preventDefault();
+      const targetElement = document.querySelector(to);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
+  if (to) {
+    if (to.startsWith('#')) {
+      return (
+        <a
+          href={to}
+          onClick={handleScroll}
+          className={'btn btn-outline ' + className}
+        >
+          {label}
+          {icon ? (
+            <span className="material-symbols-rounded animate-bounce" aria-hidden="true">
+              {icon}
+            </span>
+          ) : undefined}
+        </a>
+      );
+    }
+    return (
+      <NavLink to={to} className={'btn btn-outline ' + className}>
+        {label}
+        {icon ? (
+          <span className="material-symbols-rounded animate-bounce" aria-hidden="true">
+            {icon}
+          </span>
+        ) : undefined}
+      </NavLink>
+    );
+  } else {
+    return (
+      <div>
+        <button className={'btn btn-outline ' + className}>
+          {label}
+          {icon ? (
+            <span className="material-symbols-rounded" aria-hidden="true">
+              {icon}
+            </span>
+          ) : undefined}
+        </button>
+      </div>
+    );
+  }}
 ButtonOutline.PropTypes= {
     label:PropTypes.string.isRequired,
     to:PropTypes.string,

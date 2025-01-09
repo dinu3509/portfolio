@@ -1,7 +1,9 @@
-import React from 'react'
+import {React,useContext} from 'react'
 import { ProCard } from './Card'
 import { p1,p2,p3,p4 } from '../assets'
+import { ThemeContext } from './ThemeContext'
 const Projects = () => {
+  const {dm} = useContext(ThemeContext)
   const projectData = [
     {
       title: 'FAKE ADVERTISMENT DETECTION',
@@ -30,9 +32,9 @@ const Projects = () => {
   ];
   
   return (
-    <div className='container mx-auto  dark:bg-black 
-    rounded-2xl backdrop-blur-sm shadow-xl py-12 mb-10'>
-        <h1 className='text-center text-4xl text-white'>PROJECTS</h1>
+    <div className={`container mx-auto ${dm? "bg-black" : ""}  
+    rounded-2xl backdrop-blur-sm shadow-xl py-12 mb-10`}>
+        <h1 className='text-center text-4xl dark:text-white'>PROJECTS</h1>
         <div className="slider  p-5 flex justify-between overflow-x-scroll scrollbar-none md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10">
   {projectData.map((project, index) => (
     <ProCard

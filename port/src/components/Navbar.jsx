@@ -37,10 +37,17 @@ const Navbar = () => {
                 className="relative px-4 rounded-lg transition duration-300 text-black md:text-black md:py-1 py-2 my-1"
               >
                 <NavLink
-                  to={`/${item.toLowerCase()}`}
+                  to={`#${item.toLowerCase()}`}
                   className={({ isActive }) => (isActive ? "active-link" : "inactive-link")}
                   style={{ zIndex: 20 }} 
-                 onClick={stateChanger2}>
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent default navigation behavior
+                    const targetElement = document.getElementById(item.toLowerCase());
+                    if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                    stateChanger2(); // Close the menu if open
+                  }}>
                   {item}
                 </NavLink>
                 <div
