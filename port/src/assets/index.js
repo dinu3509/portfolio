@@ -23,5 +23,9 @@ import p2 from './p2.jpg'
 import p3 from './p3.jpg'
 import p4 from './p4.jpg'
 import cc from './cc.jpg'
+import twitter from './twitter.png'
+import insta from './instagram.png'
+import github from './github.png'
+import linkedin from './linkedin.png'
 
-export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git,c,py,java,cpp,day,night,p1,p2,p3,p4,cc}
+export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git,c,py,java,cpp,day,night,p1,p2,p3,p4,cc,twitter,insta,github,linkedin}

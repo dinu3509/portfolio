@@ -134,6 +134,16 @@ textarea:focus{
 .ddd:focus::placeholder {
   color: white; /* Hides the placeholder text */
 }
+
+.ic:hover{
+  border-color: white;
+    box-shadow: 0 0 10px white;
+}
+.aa{
+  box-shadow: 0 0 5px white;
+
+}
+
 @media screen and (max-width:49 ){
   .carouselPrimary{
     display: flex;
