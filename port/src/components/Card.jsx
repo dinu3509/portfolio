@@ -3,6 +3,34 @@ import PropTypes from 'prop-types'
 import { ejs } from '../assets'
 import { ThemeContext } from './ThemeContext'
   
+
+
+const Certificate = (
+    {img,
+    title,
+    link}
+) =>{
+    return(
+        <div className="h-[300px] bg-red-50 w-fit relative overflow-hidden group">
+        <div>
+          <img src={img} alt="Hover effect" className="w-[450px] h-[300px] z-0 group-hover:scale-110 transition-all duration-300" />
+        </div>
+        <div className="absolute w-full h-full backdrop-blur-lg top-full group-hover:top-0  transition-all duration-300 ease-in-out flex  justify-center items-center ">
+            <a href={link} target='_blank' className='border border-black rounded-3xl p-2'> View</a>
+        </div>
+      </div>
+      
+    )
+}
+Certificate.propTypes = {
+    img:PropTypes.object,
+    title:PropTypes.string,
+    link:PropTypes.string,
+   
+
+}
+
+
 const ProCard = (
     {
         img,
@@ -103,4 +131,4 @@ Card.PropTypes ={
     measure:PropTypes.string
 }
 
-export  {Card,ScrollItem,ProCard}
+export  {Card,ScrollItem,ProCard,Certificate}

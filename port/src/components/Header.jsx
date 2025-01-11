@@ -7,7 +7,7 @@ const Header = () => {
   const {dm} = useContext(ThemeContext)
   return (
     <>
-    <header className={` flex w-full justify-between z-20 h-20 items-center  px-8 my-5 ${dm?"dark" : ""}`}>
+    <header className={` flex w-full justify-between z-20 h-20 items-center my-1 md:my-5 px-8  ${dm?"dark" : ""}`}>
         <div className="flex justify-between w-full max-w-screen-2xl mx-auto items-center">
 
             {/*Logo*/}
@@ -25,7 +25,14 @@ const Header = () => {
 
             {/*Contact-Button*/}
         <div className="contact hidden md:flex items-center">
-            <button className={`p-3 rounded-xl shadow-lg flex items-center active:scale-105 duration-150 bg-white`}>
+            <button className={`p-3 rounded-xl shadow-lg flex items-center active:scale-105 duration-150 bg-white`}
+            onClick={(e) => {
+              e.preventDefault(); 
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }}>
                 Contact Me
             </button>
         </div>

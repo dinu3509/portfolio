@@ -14,17 +14,17 @@ const About = () => {
          <div className={`${dm ? "dark" : ""}`}>
         <div className="container rounded-b-2xl mx-auto dark:bg-[#000000] p-12">
             
-            <div className="md:grid md:grid-cols-2 ">
+            <div className="md:grid lg:grid-cols-2 ">
 
                 <div className="flex flex-col justify-center items-center  mr-6 text-4xl">
                     
-                    <img src={code} alt="" className='w-80 h-80 hidden md:block rounded-full  xl:rounded-full'/>
+                    <img src={code} alt="" className='w-80 h-80 hidden lg:block rounded-full  xl:rounded-full'/>
 
 
                 </div>
                 <div className="text-white 
                 md:text-lg font-semibold">
-                    <div className="flex gap-2 text-3xl md:flex-col justify-center md:justify-start">
+                    <div className="flex gap-2 text-3xl lg:flex-col justify-center lg:justify-start">
                     <h2 className='text-black dark:text-white md:text-6xl 2xl:text-7xl font-bold'>ABOUT</h2>
                     <h2 className='text-red-900 md:text-6xl 2xl:text-7xl font-bold '>ME</h2>
                     </div>
@@ -36,7 +36,7 @@ const About = () => {
 
             </div>
             <div className="col-span-2 text-black dark:text-white w-full mt-5 lg:mt-12
-            text-sm font-bold  p-2 rounded-2xl backdrop:blur-2xl bg-gradient-to-r from-red-600/5 to-red-600/5 xl:text-2xl">
+            text-sm font-bold  p-2 rounded-2xl backdrop:blur-2xl bg-gradient-to-r from-sky-600/10 to-sky-600/10 xl:text-2xl">
                 
                 <div className="grid grid-cols-2 ">
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>

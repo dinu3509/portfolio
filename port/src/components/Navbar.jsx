@@ -31,14 +31,16 @@ const Navbar = () => {
 </div>
             <div className={`navbar absolute right-0 top-20 text-center mr-5 ${state ? '' : 'hidden'} md:flex md:static dark:bg-[#EFEFED] rounded-2xl z-10`}>
                 <ul className='md:flex gap-5 bg-gradient-to-b from-sky-400/20 to-sky-400/10 md:bg-none backdrop-blur-lg shadow-2xl z-0 rounded-xl p-2'>
-            {['About','Profile','Skills'].map((item)=>(
+            {['About','Profile','Skills','Projects'].map((item)=>(
                 <li
                 key={item}
-                className="relative px-4 rounded-lg transition duration-300 text-black md:text-black md:py-1 py-2 my-1"
+                className="relative  px-4 rounded-full transition duration-100 text-black md:text-black md:py-1 py-2 my-1 hover:bg-black hover:text-white w-full "
               >
                 <NavLink
                   to={`#${item.toLowerCase()}`}
-                  className={({ isActive }) => (isActive ? "active-link" : "inactive-link")}
+                  className={({ isActive }) =>
+                    `${isActive ? "active-link" : "inactive-link"} `
+                  }
                   style={{ zIndex: 20 }} 
                   onClick={(e) => {
                     e.preventDefault(); // Prevent default navigation behavior
@@ -46,12 +48,12 @@ const Navbar = () => {
                     if (targetElement) {
                       targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
-                    stateChanger2(); // Close the menu if open
+                    stateChanger2(); 
                   }}>
                   {item}
                 </NavLink>
                 <div
-                  className="active-box absolute top-0 left-0 -z-10 h-full w-full pointer-events-none"
+                  className="absolute top-0 left-0 -z-10 h-full w-full pointer-events-none"
                 ></div>
               </li>
             ))}</ul></div>

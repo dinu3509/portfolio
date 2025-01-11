@@ -32,6 +32,7 @@ const Projects = () => {
   ];
   
   return (
+    <section id='projects'>
     <div className={`container mx-auto ${dm? "bg-black" : ""}  
     rounded-2xl backdrop-blur-sm shadow-xl py-12 mb-10`}>
         <h1 className='text-center text-4xl dark:text-white'>PROJECTS</h1>
@@ -48,7 +49,7 @@ const Projects = () => {
 </div>
 
 
-    </div>
+    </div></section>
   )
 }
 

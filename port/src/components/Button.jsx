@@ -25,7 +25,7 @@ const SubmitButton = () => {
   const { dm } = useContext(ThemeContext);
 
   return (
-    <div type="submit" className={`w-full ${dm? "dark" : undefined}`}>
+    <div type="submit" className={`w-full ${dm? "dark" : undefined}`+` flex justify-center`}>
       <button className='border rounded-full w-full py-1 max-w-[425px] dark:border-white border-black'>
         <h3 className='text-xl'>SUBMIT</h3>
       </button>
@@ -146,6 +146,8 @@ const ReadButton =(
     className,extraContent
   }
 )=>{
+  const { dm } = useContext(ThemeContext);
+
   const[stateMore,setStateMore]= useState(false);
   const [showCursor, setShowCursor] = useState(true);
 
@@ -155,7 +157,7 @@ const ReadButton =(
   }
   return (
     <>
-        {stateMore && <div className="extra-content"><Typewriter
+        {stateMore && <div className={`extra-content ${dm?"text-white ":"text-black "}`}><Typewriter
             words={[extraContent]} 
             loop={1}
             cursor ={showCursor}
