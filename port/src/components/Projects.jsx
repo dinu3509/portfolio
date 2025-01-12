@@ -35,7 +35,7 @@ const Projects = () => {
     <section id='projects'>
     <div className={`container mx-auto ${dm? "bg-black" : ""}  
     rounded-2xl backdrop-blur-sm shadow-xl py-12 mb-10`}>
-        <h1 className='text-center text-4xl dark:text-white'>PROJECTS</h1>
+        <h1 className='text-black dark:text-white md:text-6xl 2xl:text-7xl font-bold text-center'><span className='text-red-900'>PRO</span>JECTS</h1>
         <div className="slider  p-5 flex justify-between overflow-x-scroll scrollbar-none md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10">
   {projectData.map((project, index) => (
     <ProCard

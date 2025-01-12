@@ -80,9 +80,9 @@ const Contact = () => {
     <div className="dark:backdrop-blur-sm backdrop-blur-sm flex flex-col md:flex-row min-h-full relative py-10 justify-around">
         
         <div className="title mt-4   items-center justify-start flex flex-col text-5xl lg:text-6xl text-center md:text-left">
-            <div className="dark:text-white">
+            <div className="dark:text-white text-black  md:text-6xl 2xl:text-7xl font-bold">
             <h1 className=" ">CONTACT</h1>
-            <h2 className="">ME</h2>
+            <h2 className="text-red-900">ME</h2>
             </div>
 
         </div>

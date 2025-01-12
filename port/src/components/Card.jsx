@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
-import { ejs } from '../assets'
 import { ThemeContext } from './ThemeContext'
   
 
@@ -48,18 +47,18 @@ const ProCard = (
 ) =>{
     return(
         <div className="w-80  mx-5 shrink-0">
-            <div className="flex flex-col border   rounded-2xl p-3 shadow-xl justify-between">
+            <div className="flex flex-col border min-h-[464px]  rounded-2xl p-3 shadow-xl justify-between">
                 <div className="flex justify-center items-center">
                     <img src={img} alt="" className='h-[200px] w-full'/>
                 </div>
 
-                <div className="flex flex-col justify-center items-center bg-gray-400 rounded-2xl p-2">
+                <div className="flex flex-col justify-center items-center bg-gray-400 rounded-b-2xl p-2 flex-1">
                     <h1 className='text-center font-semibold'>{title}</h1>
                     <h2>
                     {content}
                     </h2>
 
-                    <a href={link} target='_blank' className='border p-1 rounded-2xl my-2 cursor-pointer shadow-lg text-lg font-semibold'>
+                    <a href={link} target='_blank' className='border w-2/5 p-1 rounded-2xl my-2 cursor-pointer shadow-lg text-lg font-semibold text-center hover:scale-105 gc1 transition-all duration-300'>
                         View
                     </a>
                     

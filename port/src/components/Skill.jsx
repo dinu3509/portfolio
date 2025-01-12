@@ -10,12 +10,12 @@ const Skill = () => {
       <div className={`${dm ? "dark": ""}`}>
     <div className='dark:bg-black container p-12 mx-auto h-auto  backdrop-blur-sm rounded-2xl shadow-2xl xl:min-h-screen mb-10'>
      
-        <h2 className="text-black dark:text-white text-center text-3xl md:text-6xl  font-bold mb-10">
+        <h2 className="text-black dark:text-white text-center text-3xl md:text-6xl 2xl:text-7xl font-bold mb-10">
           SK<span className='text-red-900'>I</span>LL< span className='text-red-900'>S</span>
         </h2>
       
    
-       <h1 className='text-black dark:text-white  text-3xl md:text-3xl text-center font-bold mb-4 '>TOOLS AND LIBRARIES</h1>
+       <h1 className='text-black dark:text-white  text-3xl md:text-4xl text-center font-bold mb-4 '>TOOLS AND LIBRARIES</h1>
       <div className="grid grid-cols-3 lg:grid-cols-5 lg:gap-y-10 ">
         <ScrollItem img={html} cl={`item item1`} label={`HTML`}></ScrollItem>
 <ScrollItem img={tail} cl={`item item2`} label={`Tailwind`}></ScrollItem>
@@ -30,14 +30,14 @@ const Skill = () => {
 
 
       </div>
-      <h1 className=' text-black dark:text-white text-center text-3xl font-bold mb-4  mt-10'><span className='hidden lg:inline'>PROGRAMMING</span> LANGUAGES</h1>
+      <h1 className=' text-black dark:text-white text-center text-3xl md:text-4xl font-bold mb-4  mt-10'><span className='hidden lg:inline'>PROGRAMMING</span> LANGUAGES</h1>
       <div className="grid grid-cols-3 lg:grid-cols-5">
       <ScrollItem img={c} cl={`item item1`} label={`C`}></ScrollItem>
 <ScrollItem img={py} cl={`item item2`} label={`Python`}></ScrollItem>
 <ScrollItem img={java} cl={`item item3`} label={`Java`}></ScrollItem>
 
       </div>
-      <div className="text-center text-3xl font-bold mt-10  text-black dark:text-white">
+      <div className="text-center text-3xl md:text-4xl font-bold mt-10  text-black dark:text-white">
         <div className="mb-4">
         CERTIFICATIONS
         </div>

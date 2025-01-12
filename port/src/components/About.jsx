@@ -31,8 +31,7 @@ const About = () => {
                 
 <div className="text-black dark:text-white">
             I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE) at GITAM University. My academic journey is fueled by a deep interest in web development and machine learning, where I aim to blend creativity with cutting-edge technology to solve real-world problems. With a strong foundation in programming and a passion for innovation, I am constantly exploring new tools and techniques to enhance my skills and contribute meaningfully to the tech community.</div>
-            <ReadButton className={`bg-red-900 
-                p-1 border border-white rounded-xl mt-2 flex gap-2 items-center justify-center text-white`} icon={`read_more`}extraContent={`Beyond academics, I have a keen interest in Olympic weightlifting, regional politics, and cricket, which reflect my dedication to personal growth, understanding societal dynamics, and fostering teamwork and discipline. Together, these pursuits shape a well-rounded individual eager to innovate and make a difference.`}></ReadButton>
+            <ReadButton className={`border  p-2 flex items-center rounded-xl bg-red-900 hover:bg-red-500 text-white`} icon={`read_more`}extraContent={`Beyond academics, I have a keen interest in Olympic weightlifting, regional politics, and cricket, which reflect my dedication to personal growth, understanding societal dynamics, and fostering teamwork and discipline. Together, these pursuits shape a well-rounded individual eager to innovate and make a difference.`}></ReadButton>
 
             </div>
             <div className="col-span-2 text-black dark:text-white w-full mt-5 lg:mt-12

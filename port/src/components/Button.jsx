@@ -39,7 +39,8 @@ const ButtonPrimary = (
     {to,
     label,
     icon,
-    className
+    className,
+    href
 
     }
 
@@ -54,10 +55,10 @@ const ButtonPrimary = (
     }else{
         return (
           <div>
-            <button className={'btn btn-primary '+className}>
+            <a target='_blank' href={href} className={'btn btn-primary '+className}>
             {label}
             {icon ? <span className='material-symbols-rounded ' aria-hidden="true">{icon}</span> :undefined}
-            </button>
+            </a>
           </div>
         )
       }
@@ -75,6 +76,7 @@ ButtonPrimary.PropTypes= {
     label:PropTypes.string.isRequired,
     to:PropTypes.string,
     className:PropTypes.string,
+    href:PropTypes.string
 }
 
 const ButtonOutline = ({
@@ -167,7 +169,7 @@ const ReadButton =(
             delaySpeed={1000}
             onType = {()=> setShowCursor(false)}
           /></div>}
-    <button className={className} onClick={toggleState}>
+    <button className={className + ` font-normal`} onClick={toggleState}>
       {stateMore ? 'Read Less' : ' Read More'}
     {icon? <span className='material-symbols-rounded' aria-hidden="true">{icon}</span> :undefined}
     </button>
