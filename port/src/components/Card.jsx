@@ -11,12 +11,18 @@ const Certificate = (
     link}
 ) =>{
     return(
-        <div className="h-[300px] bg-red-50 w-fit relative overflow-hidden group">
+        <div className="md:h-[450px]  w-fit max-w-[150px] md:max-w-[450px] relative over rounded-2xl overflow-hidden ">
         <div>
-          <img src={img} alt="Hover effect" className="w-[450px] h-[300px] z-0 group-hover:scale-110 transition-all duration-300" />
+          <img src={img} alt="Hover effect" className="md:w-[450px] md:h-[300px] z-0 h-[150px] w-[150px]" />
         </div>
-        <div className="absolute w-full h-full backdrop-blur-lg top-full group-hover:top-0  transition-all duration-300 ease-in-out flex  justify-center items-center ">
-            <a href={link} target='_blank' className='border border-black rounded-3xl p-2'> View</a>
+    
+        <div className=" md:h-[150px] bg-black py-2 md:py-0 flex flex-col justify-around items-center">
+            <div className="text-sm md:text-2xl pb-2 md:pb-0"> {title}</div>
+            <a href={link} className='gc border  rounded-full w-2/5 flex items-center justify-center' target='_blank'><span class="material-symbols-rounded md:text-4xl">
+visibility
+</span></a>
+            
+           
         </div>
       </div>
       
@@ -81,7 +87,7 @@ const ScrollItem = (
 
     return(
         <div className={`flex flex-col dark:text-white  items-center m-2 shrink-0  ${dm?"dark ":" "}`+cl}>
-            <img src={img}  className='xl:h-32 xl:w-32 md:h-24 md:w-24 h-10 sm:h-20 '/>
+            <img src={img}  className='xl:h-28 xl:w-28 md:h-24 md:w-24 h-10 sm:h-20 '/>
             <h2 className=' md:text-lg'>{label}</h2>
         </div>
     )

@@ -28,7 +28,8 @@ import insta from './instagram.png'
 import github from './github.png'
 import linkedin from './linkedin.png'
 import leet from './leet.png'
-import web from './we1.webp'
+import web from './we1.jpeg'
 import ml from './ml1.png'
+import cp from './cp.png'
 
-export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git,c,py,java,cpp,day,night,p1,p2,p3,p4,cc,twitter,insta,github,linkedin,leet,web,ml}
+export {logo,hero,code,card,ejs,html,js,mongo,ocv,panda,tail,react,tf,git,c,py,java,cpp,day,night,p1,p2,p3,p4,cc,twitter,insta,github,linkedin,leet,web,ml,cp}

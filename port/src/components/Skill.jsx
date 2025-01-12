@@ -16,7 +16,7 @@ const Skill = () => {
       
    
        <h1 className='text-black dark:text-white  text-3xl md:text-3xl text-center font-bold mb-4 '>TOOLS AND LIBRARIES</h1>
-      <div className="grid grid-cols-3 lg:grid-cols-5 ">
+      <div className="grid grid-cols-3 lg:grid-cols-5 lg:gap-y-10 ">
         <ScrollItem img={html} cl={`item item1`} label={`HTML`}></ScrollItem>
 <ScrollItem img={tail} cl={`item item2`} label={`Tailwind`}></ScrollItem>
 <ScrollItem img={js} cl={`item item3`} label={`JavaScript`}></ScrollItem>
@@ -31,7 +31,7 @@ const Skill = () => {
 
       </div>
       <h1 className=' text-black dark:text-white text-center text-3xl font-bold mb-4  mt-10'><span className='hidden lg:inline'>PROGRAMMING</span> LANGUAGES</h1>
-      <div className="overflow-hidden xl:h-48 lg:h-36 border-y flex justify-center items-center h-32 md:gap-24 scrollContainer">
+      <div className="grid grid-cols-3 lg:grid-cols-5">
       <ScrollItem img={c} cl={`item item1`} label={`C`}></ScrollItem>
 <ScrollItem img={py} cl={`item item2`} label={`Python`}></ScrollItem>
 <ScrollItem img={java} cl={`item item3`} label={`Java`}></ScrollItem>
@@ -44,8 +44,8 @@ const Skill = () => {
 
         <div className="">
                <div className="flex gap-5 justify-around text-white">
-      <Certificate img={web} link={`http://ude.my/UC-8251bd14-842f-43c8-9782-e74710f9e966`}></Certificate>
-      <Certificate img={ml} link={`https://www.coursera.org/account/accomplishments/specialization/certificate/BRVTFPXQW5Y8`}></Certificate>
+      <Certificate img={web} link={`http://ude.my/UC-8251bd14-842f-43c8-9782-e74710f9e966`} title={`WEB DEVELOPER 3.0`}></Certificate>
+      <Certificate img={ml} link={`https://www.coursera.org/account/accomplishments/specialization/certificate/BRVTFPXQW5Y8`} title={`ML SPECIALIZATION`}></Certificate>
 
       </div>
         </div>

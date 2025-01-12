@@ -141,6 +141,10 @@ textarea:focus{
   box-shadow: 0 0 5px white;
 
 }
+.gc:hover{
+
+  text-shadow: 0 0 5px white;
+}
 
 @media screen and (max-width:49 ){
   .carouselPrimary{

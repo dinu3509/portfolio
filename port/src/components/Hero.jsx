@@ -65,9 +65,9 @@ const Hero = () => {
 
                     <div className="tagline text-xl text-center lg:text-start lg:text-3xl font-semibold">Building Scalable Web Apps with MERN, Exploring the Future with ML.</div>
                     <div className="flex pt-4 gap-8">
-                    <ButtonPrimary label="Download CV" icon="download" className={'border  p-2 flex items-center rounded-xl bg-red-900 hover:bg-red-500'}></ButtonPrimary>  
+                    <ButtonPrimary label="Download CV" icon="download" className={'border  p-2 flex items-center rounded-xl bg-red-900 hover:bg-red-500 text-white'}></ButtonPrimary>  
 
-                    <ButtonOutline label={'Scroll Down'} icon={'arrow_downward'} to={'#about'} className={'border p-2 flex items-center rounded-xl bg-gray-700 hover:bg-gray-600'}></ButtonOutline>
+                    <ButtonOutline label={'Scroll Down'} icon={'arrow_downward'} to={'#about'} className={'border p-2 flex items-center rounded-xl bg-gray-700 hover:bg-gray-600 text-white'}></ButtonOutline>
                     </div>
                 </div>
 

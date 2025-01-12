@@ -1,6 +1,6 @@
 import {React,useState,useContext} from 'react'
 import CountUp from 'react-countup';
-import { code } from '../assets';
+import { code,cp } from '../assets';
 import { ButtonOutline,ButtonPrimary,ReadButton } from './Button'
 import ScrollTrigger from 'react-scroll-trigger';
 import { ThemeContext } from './ThemeContext'
@@ -14,11 +14,11 @@ const About = () => {
          <div className={`${dm ? "dark" : ""}`}>
         <div className="container rounded-b-2xl mx-auto dark:bg-[#000000] p-12">
             
-            <div className="md:grid lg:grid-cols-2 ">
+            <div className="md:grid lg:grid-cols-2 transition-all duration-300">
 
                 <div className="flex flex-col justify-center items-center  mr-6 text-4xl">
                     
-                    <img src={code} alt="" className='w-80 h-80 hidden lg:block rounded-full  xl:rounded-full'/>
+                    <img src={cp} alt="" className='w-80 h-80 hidden lg:block rounded-full  xl:rounded-full'/>
 
 
                 </div>
@@ -31,8 +31,8 @@ const About = () => {
                 
 <div className="text-black dark:text-white">
             I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE) at GITAM University. My academic journey is fueled by a deep interest in web development and machine learning, where I aim to blend creativity with cutting-edge technology to solve real-world problems. With a strong foundation in programming and a passion for innovation, I am constantly exploring new tools and techniques to enhance my skills and contribute meaningfully to the tech community.</div>
-            <ReadButton className={`bg-red-950
-                p-1 border border-white rounded-xl mt-2 flex gap-2 items-center justify-center dark:text-white text-black`} icon={`read_more`}extraContent={`Beyond academics, I have a keen interest in Olympic weightlifting, regional politics, and cricket, which reflect my dedication to personal growth, understanding societal dynamics, and fostering teamwork and discipline. Together, these pursuits shape a well-rounded individual eager to innovate and make a difference.`}></ReadButton>
+            <ReadButton className={`bg-red-900 
+                p-1 border border-white rounded-xl mt-2 flex gap-2 items-center justify-center text-white`} icon={`read_more`}extraContent={`Beyond academics, I have a keen interest in Olympic weightlifting, regional politics, and cricket, which reflect my dedication to personal growth, understanding societal dynamics, and fostering teamwork and discipline. Together, these pursuits shape a well-rounded individual eager to innovate and make a difference.`}></ReadButton>
 
             </div>
             <div className="col-span-2 text-black dark:text-white w-full mt-5 lg:mt-12
