@@ -110,15 +110,15 @@ const Card = (
     }
 ) => {
   return (
-    <div className='card group relative  rounded-t-3xl w-full bg- gap-1 m-1 flex flex-col items-center my-3 h-56 justify-center md:min-w-[544px] md:max-w-[544px] overflow-hidden min-w-[300px]'>
+    <div className='card group relative  rounded-t-3xl w-full bg- gap-1 m-1 flex flex-col items-center my-3 h-56 justify-center md:min-w-[544px] md:max-w-[544px] overflow-hidden min-w-[300px] '>
                     <h1 className='text-xl font-serif font-bold'>{clgName}</h1>
                     <h1 className='text-lg font-bold text-yellow-600'>{year}</h1>
                     <h1 className='text-xl  font-bold'>{course}</h1>
-                    <div className="absolute rounded-t-2xl w-full h-full bg-transparent backdrop-blur-sm flex justify-center items-center translate-y-full group-hover:translate-y-1 transition-transform duration-300 ">
+                    <div className="absolute rounded-t-2xl w-full h-full bg-transparent backdrop-blur-sm flex justify-center items-center translate-y-full group-hover:translate-y-1 transition-transform duration-300 p-2">
                         <div className="grade text-black font-bold">
                             <div className="flex flex-col justify-center items-center border p-4 rounded-xl shadow-xl">
                                 <h2 className='text-white font-bold text-2xl'>{measure}</h2>
-                                <h2 className='text-white font-bold text-2xl'>{grade}</h2>
+                                <h2 className='text-white font-bold text-2xl text-center bg-'>{grade}</h2>
                                 </div>
                             <div className="">
                                 

@@ -18,7 +18,9 @@ const Hero = () => {
        const [counterOn,setCounterOn]=useState(false)
           const {dm} =useContext(ThemeContext);
       
-  return (<div className='z-0 mb-10'>
+  return (
+  <section id='hero'>
+  <div className='z-0 mb-10'>
 
     <div className={`mt-1 ${dm ? "dark" : ""} `}>
         <div className={`container mx-auto  rounded-t-2xl overflow-hidden p-5 s dark:bg-black  backdrop-blur-sm z-0 shadow-2xl `}>
@@ -54,11 +56,11 @@ const Hero = () => {
 
                    </div>
                     <div className="name">
-                    <span className='text-4xl md:text-6xl 2xl:text-8xl pb-3 font-bold'>Dinesh Reddy</span>
+                    <span className='text-4xl md:text-6xl 2xl:text-8xl pb-3 font-bold fh'>Dinesh Reddy</span>
 
                     </div>
                     <div className="flex justify-center bg-transparent h-10 md:h-auto md:pb-2 lg:pb-3">
-                    <span className='text-3xl font-bold text-red-900 md:text-5xl xl:text-6xl '> {te} </span> 
+                    <span className='fh text-3xl font-bold text-red-900 md:text-5xl xl:text-6xl '> {te} </span> 
                     <span className='text-3xl font-bold text-red-900 md:text-5xl xl:text-6xl '><Cursor/></span>
                     </div>
                     
@@ -93,7 +95,7 @@ const Hero = () => {
 
 
     </div>
-    </div>
+    </div></section>
   )
 }
 

@@ -4,6 +4,8 @@
 body {
   background-size: cover; /* Ensures it covers the entire area */
   background-position: center; /* Centers the image */
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
   background-repeat: no-repeat; /* Prevents repetition */
 }
 *{
@@ -16,7 +18,10 @@ li:has(.active-link) .active-box:hover {
 .active-link{
   @apply transition-all ease-in-out duration-300
 }
-
+.fh{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+}
 /*.scw{
   scale: 0 1;
   animation: scw linear;
@@ -144,6 +149,16 @@ textarea:focus{
 .gc:hover{
 
   text-shadow: 0 0 5px white;
+}
+.zitter{
+  font-family: zitter;
+  font-optical-sizing: auto;
+
+}
+
+@font-face {
+  font-family: zitter;
+  src: url(./Zitter-Regular.otf);
 }
 
 @media screen and (max-width:49 ){
