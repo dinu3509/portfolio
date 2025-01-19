@@ -22,8 +22,8 @@ const Education = () => {
         </div>
         <div className="flex flex-col mt-5 text-white items-center">
         <h2 className='text-3xl md:text-6xl 2xl:text-7xl text-center font-bold text-black dark:text-white'>EXPER<span className='text-red-800'>I</span>E<span className='text-red-800'>N</span>CE</h2>
-            <Card clgName={`ExceedIQ`} year={`Aug 2024 - Present`} course={`MERN Stack Trainee`} grade={`Not Yet Given`} measure={`Project:`}></Card>
-            <Card clgName={`Rinex AI`} year={`Sept 2024 - Present`} course={`ML and DL Trainee`} grade={`Stock Price Prediction`} measure={`Project:`}></Card>
+            <Card clgName={`XceedIQ`} year={`Aug 2024 - Present`} course={`MERN Stack Trainee`} grade={`Not Yet Given`} measure={`Project:`}></Card>
+            <Card clgName={`Rinex AI`} year={`Sept 2024 - Oct 2024`} course={`ML and DL Trainee`} grade={`Stock Price Prediction`} measure={`Project:`}></Card>
             <Card clgName={`Vibrance AI`} year={`June 2024 - Aug 2024`} course={`AI Trainee`} grade={`Plant Leaf Disease Detection`} measure={`Project:`}>
             
             </Card>
